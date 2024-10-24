@@ -355,8 +355,6 @@ select:hover{
         gap: 0%
     }
 
-    .transLabels label{
-    }
     .transferInputContainer{
         height: 100%;
         width: 60%;
@@ -378,6 +376,8 @@ select:hover{
     }
 
     .transferButton button{
+        height: 30px;
+        width: 40%;
         margin: 3px;
         padding: .5% 5%;
         font-size: 13px;
