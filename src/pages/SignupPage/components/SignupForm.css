@@ -168,8 +168,14 @@
     .regForm{
         gap: 2%;
     }
+
+    .createanAccount{
+        gap:0px
+    }
     .regFormLabels{
         align-items: flex-start;
+        font-size: 14px;
+        gap:8px;
     }
     .regFormLabels label{
         font-size: 120%;
@@ -185,6 +191,7 @@
         text-align: center;
         box-shadow: 2px 2px 8px rgba(0,0,0,.5);
     }
+
 
     .signUp{
         width: 10%;
@@ -246,7 +253,6 @@
         align-items: flex-start;
     }
     .regFormLabels label{
-        font-size: 100%;
         padding: 5px 0px;
     }
     .regFormInputs input{
