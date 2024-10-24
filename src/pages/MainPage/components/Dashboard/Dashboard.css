@@ -321,4 +321,17 @@
     border-bottom-right-radius: 10px !important;
   }
 }
+
+@media (max-width: 400px) {
+  .avionBankLogo{
+    padding-left: 5px;
+  }
+  .goldChip{
+    padding: 10px;
+  }
+  .goldChip img{
+    width: 55px !important;
+    padding-left: 10px !important ;
+  }
+}
  
