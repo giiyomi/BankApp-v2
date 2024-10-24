@@ -1,0 +1,16 @@
+.loginPage{
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(255, 200, 200));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media (max-width:800px){
+    .loginPage{
+        justify-content: space-between;
+        align-content: center;
+    }
+}

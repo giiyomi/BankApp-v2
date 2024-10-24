@@ -1,0 +1,31 @@
+.backgroundPage{
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(255, 200, 200));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.avionbankLogo{
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media (max-width:800px){
+    .backgroundPage{
+        justify-content: space-between;
+        align-content: center;
+    }
+
+}
+
+@media (max-height:700px){
+    .backgroundPage{
+        justify-content: space-between;
+        align-content: center;
+        min-height: 480px;
+    }
+}

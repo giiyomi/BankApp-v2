@@ -1,0 +1,330 @@
+.container{
+    z-index: 2;
+    margin: 0;
+    height: 100%;
+    max-width: 100vw;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position:absolute;
+    animation: slowlyOpenRegClntWndw .5s;
+}
+
+@keyframes slowlyOpenRegClntWndw {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+.addUserWindow{
+    height: 500px;
+    width: 600px;
+    background-color: rgb(255, 255,255);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0, .5);
+}
+
+.shadowContainer{
+    height: 485px;
+    width: 590px;
+    background-image: linear-gradient(rgba(0,0,0,.3), white), url('https://assets-global.website-files.com/600e947088abe035d0238a33/601c0703e6494b699a59cc80_avion-logo.svg');
+    background-repeat: no-repeat;
+    background-size: auto, 80%;
+    background-position: center, 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+}
+
+.clientInfoTitle{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid black;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    font-size: 30px;
+
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.addUserField{
+    height: 55%;
+    width: 100%;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.labels{
+    height: 100%;
+    width: 36%;
+    margin:0px;
+    padding: 0px;
+    background-color: rgba(0,0,0,0);
+    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: column;
+    gap: 10%;
+    font-size: 25px;
+}
+
+.inputs{
+
+    padding-left: 5%;
+    background-color: rgba(0,0,0,0);
+    height: 100%;
+    width: 64%;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-direction: column;
+    gap: 15%;
+}
+
+.inputs input{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0,0,0,.6);
+    height: 16%;
+    width: 85%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.addUserButton{
+    height: 25%;
+    width: 100%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.addUserButton button{
+    padding: 3% 20%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border: none;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    font-size: 20px;
+}
+
+.addUserButton button:hover{
+    cursor: pointer;
+    background: rgba(255, 108, 108, 0.98);
+    color:rgb(255, 255, 255);
+    transition: .5s;
+    -webkit-transition: .5s;
+  }
+
+
+@media (max-width:700px){
+    .addUserWindow{
+        height: 400px;
+        width: 450px;
+    }
+    .shadowContainer{
+        height: 385px;
+        width: 440px;
+    }
+    
+    .clientInfoTitle{
+        font-size: 23px;
+    }
+    
+    .addUserField{
+        padding-top: 8%;
+    }
+    
+    .labels{
+        width: 38%;
+        font-size: 20px;
+    }
+    
+    input{
+        font-size: 17px;
+    }
+}
+
+@media (max-width:500px){
+    .addUserWindow{
+        height: 300px;
+        width: 350px;
+    }
+    .shadowContainer{
+        height: 285px;
+        width: 340px;
+    }
+    
+    .clientInfoTitle{
+        font-size: 20px;
+    }
+    
+    .addUserField{
+        padding-top: 5%;
+    }
+    
+    .labels{
+        width: 38%;
+        font-size: 18px;
+    }
+
+    .inputs{
+        width: 62%;
+    }
+    
+    .inputs input{
+        height: 20%;
+        font-size: 15px;
+    }
+    .addUserButton{
+        margin-top: 3%;
+    }
+
+    .addUserButton button{
+        padding: 1% 8%;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:400px){
+    .addUserWindow{
+        height: 200px;
+        width: 250px;
+    }
+    .shadowContainer{
+        height: 185px;
+        width: 240px;
+    }
+    
+    .clientInfoTitle{
+        font-size: 17px;
+    }
+    
+    .addUserField{
+        
+        padding-top: 3%;
+    }
+    
+    .labels{
+        width: 42%;
+        font-size: 13px;
+    }
+
+    .inputs{
+        width: 58%
+    }
+    
+    .inputs input{
+        height: 17%;
+        font-size: 12px;
+    }
+
+    .addUserButton button{
+        margin: 3px;
+        padding: .5% 5%;
+        font-size: 13px;
+    }
+}
+
+
+/* @media (max-height:700px){
+    .addUserWindow{
+        height: 400px;
+        width: 450px;
+    }
+    .shadowContainer{
+        height: 385px;
+        width: 440px;
+    }
+    
+    .clientInfoTitle{
+        font-size: 23px;
+    }
+    
+    .addUserField{
+        padding-top: 8%;
+    }
+    
+    .labels{
+        width: 38%;
+        font-size: 20px;
+    }
+    
+    input{
+        font-size: 17px;
+    }
+}
+
+@media (max-height:500px){
+    .addUserWindow{
+        height: 300px;
+        width: 350px;
+    }
+    .shadowContainer{
+        height: 285px;
+        width: 340px;
+    }
+    
+    .clientInfoTitle{
+        font-size: 20px;
+    }
+    
+    .addUserField{
+        padding-top: 5%;
+    }
+    
+    .labels{
+        width: 38%;
+        font-size: 18px;
+    }
+
+    .inputs{
+        width: 62%;
+    }
+    
+    input{
+        height: 20%;
+        font-size: 15px;
+    }
+
+    button{
+        padding: 1% 8%;
+        font-size: 17px;
+    }
+} */

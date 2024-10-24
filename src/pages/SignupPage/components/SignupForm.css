@@ -1,0 +1,395 @@
+.userInformation{
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.regTitle{
+    font-size: 200%;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: rgb(254, 82, 82);
+}
+
+.regForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+    flex-direction: column;
+}
+
+.personalInfo{
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.titlesInForms{
+    font-size: 150%;
+    padding: 5px 0px;
+
+
+}
+
+.createanAccount{
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.regFormLabels{
+    font-weight: 400;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.regFormLabels label{
+    font-size: 150%;
+    padding: 5px 0px;
+}
+.regFormInputs{
+    flex: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.regFormInputs input{
+    background-color: rgb(255,251,251);
+    border: 0px;
+    border-radius: 10px;
+    font-size: 140%;
+    width: 300px;
+    margin: 5px 0px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+
+.signUp{
+    width: 30% !important;
+    text-wrap: nowrap;
+    margin: 1%;
+    color: white;
+    background-color: rgb(254, 82, 82);
+    padding: 10px 220px;
+    border-radius: 20px;
+    font-size: 130%; 
+    border: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+.signUp:hover{
+    background: rgba(255, 108, 108, 0.999);
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+@media (max-width:800px){
+    .userInformation{
+        width: 600px;
+        justify-content: center;
+    }
+
+    .regFormLabels{
+        align-items: flex-end;
+    }
+
+    .signUp{
+        width: 50%;
+        padding: auto;
+    }   
+}
+
+@media (max-width:600px){
+    .userInformation{
+        width: 500px;
+        justify-content: center;
+
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 140%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,250,250);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 130%;
+        width: 250px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 10px 200px;
+    }   
+}
+
+@media (max-width:500px){
+    .userInformation{
+        width: 400px;
+        justify-content: center;
+        box-shadow: none;
+        flex:20%;
+        gap: 10%;
+        padding-top: 0;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 120%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 120%;
+        width: 250px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 10px 200px;
+        font-size: 120%; 
+    }   
+}
+
+@media (max-width:440px){
+    .userInformation{
+        width: 380px;
+        justify-content: center;
+        box-shadow: none;
+        flex:20%;
+        gap: 5%;
+        padding-top: 0;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 105%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 105%;
+        width: 220px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 10px 170px;
+        font-size: 105%; 
+    }   
+}
+
+@media (max-width:380px){
+    .userInformation{
+        width: 340px;
+        justify-content: center;
+        box-shadow: none;
+        flex:20%;
+        gap: 5%;
+        padding-top: 0;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 100%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 100%;
+        width: 180px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 8px 150px;
+        font-size: 100%; 
+    }   
+}
+
+@media (max-width:340px){
+    .userInformation{
+        width: 300px;
+        justify-content: center;
+        box-shadow: none;
+        flex:20%;
+        gap: 5%;
+        padding-top: 0;
+    }
+    .regTitle{
+        font-size: 180%;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 80%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 80%;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 6px 140px;
+        font-size: 100%; 
+    }   
+}
+
+@media (max-width:340px){
+    .userInformation{
+        width: 260px;
+        justify-content: center;
+        box-shadow: none;
+        flex:20%;
+        gap: 5%;
+        padding-top: 0;
+    }
+    .regTitle{
+        font-size: 170%;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 80%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 80%;
+        width: 150px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 6px 120px;
+        font-size: 100%; 
+    }   
+}
+
+@media (max-height:700px){
+
+    .userInformation{
+        padding: 0%;
+        margin: auto;
+        width: 500px;
+        height: 400px;
+        justify-content: center;
+    }
+    .regForm{
+        gap: 2%;
+    }
+    .regFormLabels{
+        align-items: flex-start;
+    }
+    .regFormLabels label{
+        font-size: 105%;
+        padding: 5px 0px;
+    }
+    .regFormInputs input{
+        background-color: rgb(255,251,251);
+        border: 0px;
+        border-radius: 10px;
+        font-size: 105%;
+        width: 220px;
+        margin: 5px 0px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .signUp{
+        width: 10%;
+        padding: 10px 170px;
+        font-size: 105%; 
+    }   
+
+    .signUp{
+        width: 50%;
+        padding: auto;
+    }   
+}
+
+@media (max-height:550px){
+    .userInformation{
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,186 @@
+.setBdgtAndExpnse{ 
+  height: 100%;
+  /* min-height: max-content; */
+  width: 30%;
+  min-width: 200px;
+  max-width: 900px;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  padding: 10px 10px;
+  padding-top: 5%;
+  border-radius:10px ;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow: auto;
+  gap:5%;
+}
+
+
+.hideLeftSideBarIcon{
+  top: 50%;
+  right: -35px;
+  position: absolute;
+  display: none;
+  animation: animationForHideIcon 2.5s infinite ;
+  cursor: pointer;
+}
+
+.hideLeftSideBarIcon i{
+  color:rgba(0,0,0,.7);
+  font-size: 30px;
+}
+
+.bdgtInptsprLine{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes animationForHideIcon {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(-20px);
+  }
+}
+
+.bdgtInptsprLine label{
+  text-align: start;
+}
+
+.bdgtInptsprLine input{
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 6px;
+  border: 1px rgb(161, 160, 160) solid;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.setExpnsTtle{
+  margin-bottom: 10%;
+}
+
+.addExpenseForm{
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expenseFormInputs{
+  width: 100%;
+}
+
+.expenseFormInputs > */*:not(:last-child)*/ {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 10px 0;
+  padding-left: 5px;
+  border-radius: 6px;
+  border: 1px rgb(161, 160, 160) solid;
+  outline: none;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.expenseFormInputs input:focus{
+box-shadow: 2px 3px 8px 2px rgba(172, 170, 169, .2);
+}
+
+.expenseFormInputs input::-webkit-outer-spin-button,.expenseFormInputs input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.expnsXtraDetails{
+  max-height: 100px;
+}
+
+
+
+
+.expenseDiv1{
+  margin-left: 50px;
+}
+
+.expenseDiv2{
+  margin-right: 5pxs;
+}
+
+.addExpenseButton:hover{
+  background: rgba(255, 108, 108, 0.999);
+  color:rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.addBudgt{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.addBudgt input{
+  outline: none;
+  width: 55%;
+  font-size: 15px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: 1px rgb(161, 160, 160) solid;
+  transition: 0.5s;
+}
+
+.addBudgt input:focus{
+  box-shadow: 2px 5px 8px 2px rgb(172, 170, 169);
+}
+
+.addBudgt input::-webkit-outer-spin-button,.addBudgt input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.addExpenseBtnContainer{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addExpenseButton{
+  height: 50px;
+  width: 90%;
+  margin: 0px;
+  font-size: 15px;
+  padding: 2px 2px;
+  background: rgb(254, 82, 82);
+  box-shadow: 0px 0px 0px rgba(0,0,0,.8);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color:white;
+  text-wrap: nowrap;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-height: 700px) {
+  .setBdgtAndExpnse{
+    padding: 0;
+  }
+
+  .addExpenseButton{
+    height: max-content;
+  }
+
+  .expenseFormInputs{
+
+  }
+}

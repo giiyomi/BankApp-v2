@@ -1,0 +1,388 @@
+.historyPage{
+    z-index: 2;
+    margin: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position:absolute;
+    cursor: default;
+    animation: slowlyOpenHstry .5s;
+}
+
+@keyframes slowlyOpenHstry {
+    from{
+        visibility: hidden;
+        opacity: 0;
+    }to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.historyWindow{
+    height: 70%;
+    width: 600px;
+    background-color: rgb(255, 255,255);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0, .5);
+}
+
+.historyContainerShadow2{
+    height: 97%;
+    width: 590px;
+
+    /* background-image: linear-gradient(rgba(0,0,0,.3), white); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+}
+
+.historyTitle{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 2px solid black;
+    /* box-shadow: 0px 6px 140px -30px rgba(0,0,0,.8); */
+    /* background-image: linear-gradient(rgb(255, 82, 82),rgb(255, 100, 100),rgb(255, 150, 150)); */
+    background-color: rgb(255, 82, 82);
+    color: white;
+    font-size: 30px;
+
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.historyFieldDisplay{
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0,0,0,.2);
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap:1%;
+    font-size: 20px;
+}
+
+.transactionHistory{
+    width: 100%;
+    margin:0px;
+    padding: 2% 0px;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    font-size: 25px;
+    text-wrap: nowrap;
+}
+
+.transactionsContainer{
+    height: 80%;
+    width: 100%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex;
+    align-content: center;
+    overflow-y: auto;
+}
+
+.trnsctionPerDate{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dateHolder{
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.dateHolder h6{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+}
+
+.transactionList {
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+.trnsctnHolder{
+    width: 100%;
+    margin-bottom: 5px;
+    padding-inline: 5%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trnsctnHolder:hover{
+    transition: background-color .5s;
+    background-color: rgba(0,0,0,.2);
+}
+
+.trnsctnHighlight{
+    display: flex;
+    gap: 5%;
+    color: rgb(187, 5, 5);
+}
+
+.trnsctnHighlight div{
+    font-weight: 400;
+    font-size: medium;
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+.trnsctnHolder h4{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trnsctnDetails{
+    width: 100%;
+    padding-inline: 5%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.trnsctnDetails h3{
+    margin: 0;
+}   
+
+.trnsctnDetails div{
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSideTrns h6, .leftSideTrns h6{
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+}
+.rightSideTrns div, .leftSideTrns div{
+    display: flex;
+    padding-left: 10px;
+}
+
+.historyButton{
+    background-image: url("https://miro.medium.com/v2/resize:fit:1358/1*vhoE-Yw2HgrlScZmR_L1zA.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 15%;
+    width: 100%;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.historyButton button{
+    padding: 3% 10%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+    border: none;
+    background-color: rgb(255, 82, 82);
+    color: white;
+    font-size: 20px;
+}
+
+.historyButton button:hover{
+    cursor: pointer;
+    background: rgba(255, 108, 108, 0.98);
+    color:rgb(255, 255, 255);
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+@media (max-height:700px){
+    
+    .historyTitle{
+        font-size: 23px;
+    }
+
+    .transactionHistory{
+        font-size: 20px;
+    }
+
+    .dateHolder h4{
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .trnsctnHighlight{
+        gap: 4%;
+    }
+    
+    .trnsctnHolder h4{
+        width: 100%;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rightSideTrns h6, .leftSideTrns h6{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+    }
+    .rightSideTrns div, .leftSideTrns div{
+        padding-left: 10px;
+        font-size: 16px !important;
+        display: flex;
+    }
+
+    .historyButton button{
+        padding: 1% 8%;
+        font-size: 17px;
+    }
+}
+
+@media (max-height:500px){
+
+    /* .historyWindow{
+        height: 300px;
+        width: 350px;
+    }
+    .historyContainerShadow2{
+        height: 285px;
+        width: 340px;
+    } */
+    
+    .historyTitle{
+        font-size: 23px;
+    }
+
+    .transactionHistory{
+        font-size: 23px;
+    }
+    .transactionsContainer{
+        text-wrap: wrap;
+    }
+    .trnsctionPerDate{
+        padding-top: 1%;
+    }
+
+    .historyButton button{
+        padding: 1% 8%;
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width:700px){
+    .historyWindow{
+        height: 400px;
+        width: 450px;
+    }
+    .historyContainerShadow2{
+        height: 385px;
+        width: 440px;
+    }
+    
+    .historyTitle{
+        font-size: 23px;
+    }
+    
+    .transactionHistory{
+        font-size: 23px;
+    }
+    .transactionsContainer{
+        padding-top: 1%;
+    }
+}
+
+@media (max-width:500px){
+    .historyWindow{
+        height: 300px;
+        width: 350px;
+    }
+    .historyContainerShadow2{
+        height: 285px;
+        width: 340px;
+    }
+    
+    .historyTitle{
+        font-size: 20px;
+    }
+    
+    .transactionHistory{
+        font-size: 18px;
+    }
+
+    .trnsctionPerDate{
+        line-break:anywhere;
+        text-wrap: wrap;
+    }
+
+    .dateHolder h4{
+        font-size: 18px;
+    }
+    
+
+    .trnsctnHighlight{
+        font-size: 15px;
+        gap: 2% ;
+        white-space: nowrap;
+    }
+    .trnsctnHolder h4{
+        font-size: 18px;
+    }
+
+    .rightSideTrns h6, .leftSideTrns h6{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 400;
+        display: flex;
+    }
+    .rightSideTrns div, .leftSideTrns div{
+        padding-left: 10px;
+        font-size: 16px !important;
+        display: flex;
+    }
+
+    .historyButton button{
+        padding: 1% 8%;
+        font-size: 17px;
+    }
+}
