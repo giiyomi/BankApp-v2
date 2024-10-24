@@ -224,12 +224,12 @@
 
 @media (max-width:400px){
     .addUserWindow{
-        height: 200px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
     .shadowContainer{
-        height: 185px;
-        width: 240px;
+        height: 285px;
+        width: 290px;
     }
     
     .clientInfoTitle{
@@ -239,15 +239,23 @@
     .addUserField{
         
         padding-top: 3%;
+        padding-bottom: 0;
     }
     
     .labels{
         width: 42%;
         font-size: 13px;
+        
+        align-items: center;
+    }
+
+    .labels div{
+        width: 100%;
     }
 
     .inputs{
-        width: 58%
+        width: 58%;
+        padding-left: 0;
     }
     
     .inputs input{
@@ -256,7 +264,8 @@
     }
 
     .addUserButton button{
-        margin: 3px;
+        height: 70%;
+        width: 40%;
         padding: .5% 5%;
         font-size: 13px;
     }

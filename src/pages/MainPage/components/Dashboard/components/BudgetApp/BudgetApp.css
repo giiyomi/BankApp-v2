@@ -318,9 +318,8 @@
 
     .setBdgtAndExpnse.showing{
         display: flex !important;
-        
         animation: slowlyShowingLeftSideBar 1s;
-        overflow-y: auto;
+        overflow-y: auto !important;
         overflow: visible;
     }
     

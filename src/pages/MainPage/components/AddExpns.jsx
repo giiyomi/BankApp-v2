@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import './AddExpns.css';
 
 function AddExpense(props){
@@ -7,6 +7,18 @@ function AddExpense(props){
     const [expenseCost, setExpenseCost] = useState(null);
     const [expDueDate, setExpDueDate] = useState(null)
     const [expAddDtails, setExpAddDtails] = useState('')
+    const closeLeftSideBar = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (closeLeftSideBar.current && !closeLeftSideBar.current.contains(event.target)) {
+                setHideLeftSideBar(true);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [setHideLeftSideBar]);
+
 
     const addExpenseHandler = (event) => {
         event.preventDefault();
@@ -25,7 +37,7 @@ function AddExpense(props){
     }
 
     return (
-        <div  className={`setBdgtAndExpnse ${hideLeftSideBar? 'hidden' : 'showing'}`} >
+        <div ref={closeLeftSideBar} className={`setBdgtAndExpnse ${hideLeftSideBar? 'hidden' : 'showing'}`} >
             <div className="hideLeftSideBarIcon" onClick={() => {setHideLeftSideBar(true)}}>
                 <i class="bi bi-arrow-left-circle-fill"></i>
             </div>

@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import './Dashboard.css';
 import BankApp from './components/BankApp/BankApp'
 import BudgetApp from './components/BudgetApp/BudgetApp';
@@ -19,7 +19,14 @@ function Dashboard(props){
         findUserArray
     } = props
 
-    const [activeApp, setActiveApp] = useState('bankApp')
+    const [activeApp, setActiveApp] = useState(localStorage.getItem('lastAppUsed') || 'bankApp');
+
+
+
+    useEffect(()=>{
+        localStorage.setItem('lastAppUsed', activeApp);
+    },[activeApp])
+    
 
     const totalBalance = accountUserCredentials.reduce((total, account) => {
         const balance = account.initial_balance;
