@@ -314,11 +314,11 @@ select:hover{
 
 @media (max-width:400px) and (max-height:700px), (max-width:400px) and (min-height:701px){
     .transferWindow{
-        height: 300px;
+        height: 350px;
         width: 300px;
     }
     .containerShadow3{
-        height: 285px;
+        height: 335px;
         width: 290px;
     }
     
@@ -348,10 +348,14 @@ select:hover{
 
     .transLabels{
         height: 100%;
+        font: 13px !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 0%
+    }
+
+    .transLabels label{
     }
     .transferInputContainer{
         height: 100%;

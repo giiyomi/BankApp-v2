@@ -262,11 +262,11 @@
 
 @media (max-width:500px) and (max-height:700px), (max-width:500px) and (min-height:701px){
     .withdrawWindow{
-        height: 300px;
+        height: 350px;
         width: 350px;
     }
     .containerShadow2{
-        height: 285px;
+        height: 335px;
         width: 340px;
     }
     
@@ -299,11 +299,11 @@
 
 @media (max-width:400px) and (max-height:700px), (max-width:400px) and (min-height:701px){
     .withdrawWindow{
-        /* height: 200px; */
+        height: 350px;
         width: 300px;
     }
     .containerShadow2{
-        /* height: 185px; */
+        height: 335px;
         width: 290px;
     }
     
@@ -319,7 +319,13 @@
         font-size: 13px;
     }
 
+    .withdrawButton{
+        padding: 5px;
+    }
+
     .withdrawButton button{
+        height: 35px;
+        width: 40%;
         margin: 3px;
         padding: .5% 5%;
         font-size: 13px;
