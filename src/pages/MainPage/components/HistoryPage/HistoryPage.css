@@ -334,11 +334,11 @@
 
 @media (max-width:500px){
     .historyWindow{
-        height: 300px;
+        height: 400px;
         width: 350px;
     }
     .historyContainerShadow2{
-        height: 285px;
+        height: 385px;
         width: 340px;
     }
     
@@ -381,7 +381,13 @@
         display: flex;
     }
 
+    .historyButton{
+        padding: 5px;
+    }
+
     .historyButton button{
+        height: 33px;
+        width: 40%;
         padding: 1% 8%;
         font-size: 17px;
     }
