@@ -71,6 +71,10 @@
   transition: 0.5s;
 }
 
+.expenseFormInputs input{
+  width: 100%;
+}
+
 .expenseFormInputs input:focus{
 box-shadow: 2px 3px 8px 2px rgba(172, 170, 169, .2);
 }

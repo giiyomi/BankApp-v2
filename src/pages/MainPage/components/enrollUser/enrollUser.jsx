@@ -90,7 +90,7 @@ const EnrollUser = (props) => {
     };
 
     return (
-        <div className="container" onClick={handleOutsideClick}>
+        <div className="addUserContainer" onClick={handleOutsideClick}>
             <div className="addUserWindow" onClick={(e) => e.stopPropagation()}>
                 <form className="shadowContainer">
                     <div className="clientInfoTitle">

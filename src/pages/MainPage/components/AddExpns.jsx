@@ -76,6 +76,7 @@ function AddExpense(props){
                         <textarea
                             className="expnsXtraDetails"
                             onChange={e=>{setExpAddDtails(e.target.value)}}
+                            placeholder="Add notes.."
                         />
 
 

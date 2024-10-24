@@ -150,6 +150,7 @@
 }
 
 .accountUser{
+    width: 100%;
     padding-right: 5%;
     margin: 0;
     text-align: center;
@@ -167,6 +168,11 @@
     margin: 0;
     font-weight: 600;
     font-size: 20px;
+}
+
+
+.automaticDisplay{
+    text-align: end;
 }
 
 .cardHolderContainer{
