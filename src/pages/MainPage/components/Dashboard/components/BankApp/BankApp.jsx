@@ -31,7 +31,7 @@ export default function BankApp(props) {
     const handleLogout = () => {
         alert("You are logging out.");
         localStorage.removeItem('currentUserNameLoggedin');
-        window.location.href = '/loginPage';
+        window.location.href = '/';
     };
     return (
         <div className='viewBankApp'>
