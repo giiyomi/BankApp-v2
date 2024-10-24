@@ -269,9 +269,12 @@
         animation: slowlyShowingLeftSideBar 1s;
     }
     
-
     .hideLeftSideBarIcon{
         display: block !important;
+    }
+
+    .dlteExpButtnsContainer{
+        align-items: flex-start !important;
     }
 }
 
@@ -328,20 +331,19 @@
         overflow: visible;
     }
     
-
     .hideLeftSideBarIcon{
         display: block !important;
         top:1px !important;
         right: 0 !important;
     }
 
-    .setExpnsTtle{
-        margin-bottom: 10px !important;
-    }
-
     .expenseFormInputs > *{
         padding: 5px !important;
         margin: 5px 0px !important;
+    }
+
+    .dlteExpButtnsContainer{
+        align-items: flex-start !important;
     }
  
 }
