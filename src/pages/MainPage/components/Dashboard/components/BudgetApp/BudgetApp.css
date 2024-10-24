@@ -89,19 +89,24 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
     gap:10px
 }
 
 .expenseInfoRight, .expenseInfoLeft{
+    width: 49%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
     align-items: flex-start;
-    text-wrap: nowrap;
 }
+
+.expenseInfoRight span, .expenseInfoLeft  span{
+    text-align: start;
+}
+
 .dlteExpButtnsContainer{
     height: 100%;
     display: flex;
@@ -338,7 +343,23 @@
         padding: 5px !important;
         margin: 5px 0px !important;
     }
+ 
+}
 
+@media (max-width:450px) {
+    .expnsWndwContainer{
+        gap:5px
+    }
+    .expenseItems{
+        padding: 0;
+        gap:5px;
+    }
+
+    .expenseItems div{
+        margin-right: 3px;
+        padding: 0;
+        gap:5px;
+    }
     
 }
 
