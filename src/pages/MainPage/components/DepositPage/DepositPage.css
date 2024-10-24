@@ -307,11 +307,11 @@
 @media (max-width:400px) and (max-height:700px), (max-width:400px) and (min-height:701px){
     .depositWindow{
         /* height: 200px; */
-        width: 250px;
+        width: 300px;
     }
     .edgeShadow{
         /* height: 185px; */
-        width: 240px;
+        width: 290px !important;
     }
     
     .depositTitle{
