@@ -2,10 +2,10 @@ import './App.css';
 import MainPage from './pages/MainPage/MainPage';
 import SignupPage from './pages/SignupPage/SignupPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import NotFoundPage  from './pages/NotFoundPage/NotFound';
 import loginCredentialsArray from './assets/data/loginCredentials.json';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 
 function App() {
   const [loginCredentials, setNewCredentials] = useState(() => {
@@ -56,6 +56,7 @@ function App() {
               />
             }
           />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
     </div>
