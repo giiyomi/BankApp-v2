@@ -191,6 +191,11 @@ function BudgetApp(props) {
                                         if (charCode !== 46 && charCode > 31 && (charCode < 48 || charCode > 57)) {
                                             e.preventDefault();
                                         }
+
+                                        if (charCode === 13) {
+                                            handleBlur(e);
+                                            e.target.blur(); 
+                                        }
                                     }}
                                 />
                             </div>
