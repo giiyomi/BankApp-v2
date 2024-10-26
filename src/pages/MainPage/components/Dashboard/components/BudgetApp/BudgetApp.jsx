@@ -142,12 +142,12 @@ function BudgetApp(props) {
                             <div className='expenseItems' key={expense.id}>
                                 <div className='expenseInfo'>
                                     <div className='expenseInfoRight'>
-                                        <span>Name: {expense.expense_name} </span>
-                                        <span>Cost: ₱ {(expense.expense_cost).toLocaleString('en')}</span>
+                                        <span><b>Name:</b> {expense.expense_name} </span>
+                                        <span><b>Cost:</b> ₱ {(expense.expense_cost).toLocaleString('en')}</span>
                                     </div>
                                     <div className='expenseInfoLeft'>
-                                        <span>Due: {dateFormatter(expense.expense_due)}</span>
-                                        <span>Note: {expense.exp_note}</span>
+                                        <span><b>Due:</b> {dateFormatter(expense.expense_due)}</span>
+                                        <span><b>Note:</b> {expense.exp_note}</span>
                                     </div>
                                 </div>
                                 <div className='dlteExpButtnsContainer'>
