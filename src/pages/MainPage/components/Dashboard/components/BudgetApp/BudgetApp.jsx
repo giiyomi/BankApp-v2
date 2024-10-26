@@ -147,7 +147,7 @@ function BudgetApp(props) {
                                     </div>
                                     <div className='expenseInfoLeft'>
                                         <span><b>Due:</b> {dateFormatter(expense.expense_due)}</span>
-                                        <span><b>Note:</b> {expense.exp_note}</span>
+                                        {expense.exp_note && <span><b>Note:</b> {expense.exp_note}</span>}
                                     </div>
                                 </div>
                                 <div className='dlteExpButtnsContainer'>
