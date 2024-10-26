@@ -48,32 +48,25 @@
 }
 
 .expnsWndwContainer{
-    width: 97%;
+    width: 100%;
+    padding: 3px 3px;
     box-sizing: border-box;
     border: 1px solid rgba(0,0,0,.3);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     flex: 1;
     overflow: auto;
-    gap:.5%;
+    gap:1%;
     /* background-color: darkgray; */
-}
-
-.expenseTab {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    gap: 234px;
-    align-items: center;
-    margin-bottom: 30px;
 }
 
 .expenseItems {
     width: 100%;
     background-color: rgba(245, 0, 0, 0.2);
-    border: 1px solid #eceaea;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 7px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -171,6 +164,7 @@
 .bdgtInptsprLine input{
     width: 100%;
     margin-bottom: 5%;
+    background-color: white;
     border-radius: 15px !important;
     border: 1px rgb(161, 160, 160) solid;
     outline: none;
