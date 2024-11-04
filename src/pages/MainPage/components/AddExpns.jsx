@@ -32,8 +32,10 @@ function AddExpense(props){
         }
         handleExpenses(newExpenseObject);
 
-        // setExpen('');
-        // setExpenseCost('');
+        setExpense('');
+        setExpenseCost('');
+        setExpDueDate('');
+        expAddDtails('');
     }
 
     return (
