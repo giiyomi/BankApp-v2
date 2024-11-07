@@ -27,9 +27,11 @@ function AddExpense(props){
             id: newId,
             expense_name: expenseName,
             expense_cost: parseFloat(expenseCost),
-            expense_due: Date(expDueDate),
+            expense_due: new Date(expDueDate),
             exp_note: expAddDtails
         }
+
+        
         handleExpenses(newExpenseObject);
 
         setExpense('');
@@ -37,6 +39,8 @@ function AddExpense(props){
         setExpDueDate('');
         expAddDtails('');
     }
+
+    console.log(new Date(expDueDate))
 
     return (
         <div ref={closeLeftSideBar} className={`setBdgtAndExpnse ${hideLeftSideBar? 'hidden' : 'showing'}`} >
