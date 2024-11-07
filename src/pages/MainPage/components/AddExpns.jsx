@@ -37,7 +37,7 @@ function AddExpense(props){
         setExpense('');
         setExpenseCost('');
         setExpDueDate('');
-        expAddDtails('');
+        setExpAddDtails('');
     }
 
     console.log(new Date(expDueDate))
